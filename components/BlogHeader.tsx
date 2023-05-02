@@ -19,11 +19,6 @@ export default function BlogHeader({
           <h1 className="text-5xl font-bold leading-tight tracking-tighter md:pr-8 md:text-7xl">
             {title}
           </h1>
-          <h4
-            className={`mt-5 text-center text-lg md:pl-8 md:text-left ${styles.portableText}`}
-          >
-            <PortableText value={description} />
-          </h4>
         </header>
       )
 
