@@ -1,7 +1,6 @@
 import Link from 'next/link'
 import Image from 'next/image'
-
-import styles from './BlogHeader.module.css'
+import { AiOutlineSwapLeft } from 'react-icons/ai'
 
 export default function BlogHeader({
   title,
@@ -15,20 +14,30 @@ export default function BlogHeader({
   switch (level) {
     case 1:
       return (
-        <header className="mb-10 mt-10 flex flex-col items-center md:mt-12 md:mb-12">
-          <h1 className="text-5xl font-bold leading-tight tracking-tighter md:pr-8 md:text-7xl">
+        <header className="mt-10 flex flex-col md:mt-12 overflow-hidden">
+          {/* <p>this is</p> */}
+          <h1 className="text-center text-5xl font-bold leading-tight tracking-tighter md:pr-8 md:text-7xl">
             {title}
           </h1>
-          
+          <div className="flex justify-center items-center">
+            <Image 
+              src="https://images.unsplash.com/photo-1543251698-bbd36d929cbb"
+              width="1000"
+              height="100"
+              alt=""
+              className="max-w-4xl h-24 md:h-36 object-cover"
+            />
+          </div>
         </header>
       )
 
     case 2:
       return (
         <header>
-          <h2 className="mb-20 mt-8 text-2xl font-bold leading-tight tracking-tight md:text-4xl md:tracking-tighter">
-            <Link href="/" className="hover:underline">
-              {title}
+          <h2 className=" mb-20 mt-8 text-2xl font-bold leading-tight tracking-tight md:text-4xl md:tracking-tighter">
+            <Link href="/" className="hover:underline flex items-center space-x-2">
+              <AiOutlineSwapLeft />
+              <p>{title}</p>
             </Link>
           </h2>
         </header>

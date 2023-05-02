@@ -12,7 +12,7 @@ export default function HeroPost(
 ) {
   const { title, coverImage, date, excerpt, author, slug } = props
   return (
-    <section className="border-t border-b border-black py-2 mb-8">
+    <section className="border-b border-black py-2 mb-8">
       <div className="font-semibold tracking-widest text-2xl md:text-3xl">
         <h2 className="mb-2 py-8">Featured Post</h2>
       </div>
@@ -32,9 +32,6 @@ export default function HeroPost(
         </div>
         <div>
           {excerpt && <p className="text-2xl mb-4 leading-relaxed">{excerpt}</p>}
-          {author && (
-            <AuthorAvatar name={author.name} picture={author.picture} />
-          )}
         </div>
       </div>
     </section>
