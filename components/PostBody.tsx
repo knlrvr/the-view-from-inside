@@ -13,7 +13,7 @@ import styles from './PostBody.module.css'
 
 export default function PostBody({ content }) {
   return (
-    <div className={`mx-auto max-w-2xl ${styles.portableText}`}>
+    <div className={`mx-auto max-w-4xl px-1 ${styles.portableText}`}>
       <PortableText value={content} />
     </div>
   )
