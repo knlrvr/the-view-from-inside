@@ -12,14 +12,11 @@ export default function HeroPost(
 ) {
   const { title, coverImage, date, excerpt, author, slug } = props
   return (
-    <section className="border-b-2 border-black py-2 mb-8">
-      <div className="font-semibold tracking-widest text-2xl md:text-3xl flex items-center">
-        <h2 className="mb-2 py-8">Featured Post</h2>
-        <div className="flex-grow pl-4">
-          <hr className="border border-black" />
-        </div>
+    <section className="border-b-2 border-black py-2 mb-8 mt-10 relative">
+      <div className="absolute top-0 left-0 border-2 border-black bg-white px-4 p-1 font-semibold tracking-widest">
+        Featured Post
       </div>
-      <div className="mb-8 md:mb-16">
+      <div className="mb-8 md:mb-16 mt-2">
         <CoverImage slug={slug} title={title} image={coverImage} priority />
       </div>
       <div className="mb-12 md:grid md:grid-cols-2 md:gap-x-16 lg:gap-x-8">

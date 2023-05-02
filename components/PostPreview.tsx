@@ -28,7 +28,7 @@ export default function PostPreview({
       <div className="py-2 text-lg">
         <Date dateString={date} />
       </div>
-      {excerpt && <p className="mb-4 text-lg leading-relaxed">{excerpt}</p>}
+      {excerpt && <p className="text-lg leading-relaxed">{excerpt}</p>}
     </div>
   )
 }

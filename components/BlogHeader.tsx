@@ -14,7 +14,7 @@ export default function BlogHeader({
   switch (level) {
     case 1:
       return (
-        <header className="mt-10 flex flex-col md:mt-12 overflow-hidden">
+        <header className="mt-6 flex flex-col md:mt-8 overflow-hidden">
           {/* <p>this is</p> */}
           <h1 className="text-center text-5xl font-bold leading-tight tracking-tighter md:pr-8 md:text-7xl">
             {title}
