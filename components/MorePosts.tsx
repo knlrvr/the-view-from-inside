@@ -12,7 +12,7 @@ export default function MoreStories({ posts }: { posts: Post[] }) {
         </h2>
         <AiOutlineSwapRight />
       </div>
-      <div className="mb-32 grid grid-cols-1 gap-y-10 md:grid-cols-2 md:gap-x-12 md:gap-y-16 lg:gap-x-18">
+      <div className="mb-16 grid grid-cols-1 gap-y-10 md:grid-cols-2 md:gap-x-12 md:gap-y-16 lg:gap-x-18">
         {posts.map((post) => (
           <PostPreview
             key={post._id}

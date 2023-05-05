@@ -7,6 +7,7 @@ import MoreStories from 'components/MorePosts'
 import * as demo from 'lib/demo.data'
 import type { Post, Settings } from 'lib/sanity.queries'
 import About from './About'
+import Footer from './Footer'
 
 export interface IndexPageProps {
   preview?: boolean
@@ -37,8 +38,9 @@ export default function IndexPage(props: IndexPageProps) {
               excerpt={heroPost.excerpt}
             />
           )}
-          {morePosts.length > 0 && <MoreStories posts={morePosts} />}
           <About />
+          {morePosts.length > 0 && <MoreStories posts={morePosts} />}
+          <Footer />
         </Container>
       </Layout>
     </>

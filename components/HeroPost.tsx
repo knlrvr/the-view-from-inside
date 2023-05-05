@@ -4,6 +4,8 @@ import Date from 'components/PostDate'
 import type { Post } from 'lib/sanity.queries'
 import Link from 'next/link'
 
+import { AiOutlineSwapRight } from 'react-icons/ai'
+
 export default function HeroPost(
   props: Pick<
     Post,
@@ -12,7 +14,7 @@ export default function HeroPost(
 ) {
   const { title, coverImage, date, excerpt, author, slug } = props
   return (
-    <section className="border-b-2 border-black py-2 mb-8 mt-10 relative">
+    <section className="py-2 mb-8 mt-10 relative">
       <div className="absolute top-0 left-0 border-2 border-black bg-white px-4 p-1 font-semibold tracking-widest">
         Featured Post
       </div>
@@ -32,6 +34,11 @@ export default function HeroPost(
         </div>
         <div>
           {excerpt && <p className="text-2xl mb-4 leading-relaxed">{excerpt}</p>}
+          <Link href={`/posts/${slug}`}
+            className="text-lg absolute bottom-4 right-4 flex items-center space-x-2 hover:underline underline-offset-2 decoration-2">
+            <p>Read More</p>
+            <AiOutlineSwapRight />
+          </Link>
         </div>
       </div>
     </section>

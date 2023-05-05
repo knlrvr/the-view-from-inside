@@ -10,6 +10,7 @@ import SectionSeparator from 'components/SectionSeparator'
 import * as demo from 'lib/demo.data'
 import type { Post, Settings } from 'lib/sanity.queries'
 import { notFound } from 'next/navigation'
+import Footer from './Footer'
 
 export interface PostPageProps {
   preview?: boolean
@@ -55,6 +56,7 @@ export default function PostPage(props: PostPageProps) {
               {morePosts?.length > 0 && <MoreStories posts={morePosts} />}
             </>
           )}
+          <Footer />
         </Container>
       </Layout>
     </>
