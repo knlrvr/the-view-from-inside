@@ -13,7 +13,7 @@ export default function PostPreview({
   slug,
 }: Omit<Post, '_id'>) {
   return (
-    <div className=" h-[420px] border-2 border-black relative">
+    <div className="h-[420px] border-2 border-black relative">
       <div className="mb-2 p-2 relative">
         <CoverImage
           slug={slug}
@@ -32,7 +32,7 @@ export default function PostPreview({
       </div> 
       {excerpt && <p className="text-lg leading-relaxed px-4">{excerpt}</p>}
       <Link href={`/posts/${slug}`}
-        className="text-lg absolute bottom-2 right-4 flex items-center space-x-2 hover:underline underline-offset-2 decoration-2">
+        className="absolute bottom-4 right-4 flex items-center space-x-2 hover:underline underline-offset-2 decoration-2">
         <p>Read More</p>
         <AiOutlineSwapRight />
       </Link>
