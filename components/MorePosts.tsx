@@ -7,12 +7,12 @@ export default function MoreStories({ posts }: { posts: Post[] }) {
   return (
     <section>
       <div className="flex items-center mb-8 font-semibold tracking-widest text-2xl md:text-3xl space-x-2">
-        <h2>
+        <h2 className="px-4">
           More Posts
         </h2>
         <AiOutlineSwapRight />
       </div>
-      <div className="grid grid-cols-1 gap-y-10 md:grid-cols-2 md:gap-x-12 md:gap-y-16 xl:grid-cols-3 lg:gap-x-18">
+      <div className="grid grid-cols-1 gap-y-10 md:grid-cols-2 md:gap-x-12 md:gap-y-16 xl:grid-cols-3 lg:gap-x-18 px-4">
         {posts.map((post) => (
           <PostPreview
             key={post._id}

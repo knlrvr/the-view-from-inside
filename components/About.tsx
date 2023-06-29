@@ -4,7 +4,7 @@ import Image from 'next/image'
 export default function About() {
   return (
     <>
-      <div className="mb-8 grid grid-cols-1 md:grid-cols-2 gap-x-8 py-12 border-t-2 border-b-2 border-black">
+      <div className="mb-20 grid grid-cols-1 md:grid-cols-2 gap-x-8 py-12 border-t-2 border-b-2 border-black px-4">
         <div className="flex justify-center items-center">
           <div className="w-48 h-48 bg-gray-200 mb-10 md:mb-0 rounded-full"></div>
         </div>
