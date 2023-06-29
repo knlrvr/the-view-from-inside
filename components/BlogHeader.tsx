@@ -13,7 +13,7 @@ export default function BlogHeader({ title, level }: { title: string, descriptio
       return (
         <header className="h-screen mt-16">
           <div className="">
-            hey
+            hey?
           </div>
         </header>
       )
