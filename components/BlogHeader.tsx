@@ -11,8 +11,10 @@ export default function BlogHeader({ title, level }: { title: string, descriptio
     case 1:
       return (
         <header className="px-4">
-          <div className="h-screen py-8 grid grid-cols-1">
-
+          <div className="">
+            <h1 className="text-8xl w-1/2">
+              {/* oh man i gotta figure this out */}
+            </h1>
           </div>
         </header>
       )
