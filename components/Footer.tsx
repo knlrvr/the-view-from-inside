@@ -9,8 +9,8 @@ import {
 const Footer = () => {
   return (
     <>
-      <div className="py-10 text-sm text-center">
-        <p> &copy; 2023 Sarah Toney</p>
+      <div className="py-10 text-xs text-center">
+        <p> &copy; 2023 Sarah Toney. All Rights Reserved.</p>
       </div>
     </>
   )
