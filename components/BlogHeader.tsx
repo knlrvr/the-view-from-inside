@@ -2,23 +2,26 @@ import Link from 'next/link'
 import Image from 'next/image'
 import { AiOutlineSwapLeft } from 'react-icons/ai'
 import { HiOutlineArrowLongDown } from 'react-icons/hi2'
+import { WiStars } from 'react-icons/wi'
 import { Reveal } from './utils/reveal'
+
+import { motion } from 'framer-motion'
 
 export default function BlogHeader({ title, level }: { title: string, description?: any[], level: 1 | 2 }) {
   switch (level) {
     case 1:
       return (
         <header className="h-screen grid grid-cols-1">
-          <div className="mt-16 flex justify-start items-start">
+          <div className="mt-16 flex justify-between items-start">
             <Reveal>
-              <h1 className="text-7xl md:text-9xl lg:text-[9rem] font-bold leading-tight tracking-tighter w-1/2">
+              <h1 className="text-8xl md:text-9xl lg:text-[9.5rem] font-bold leading-tight tracking-tighter w-1/2">
                 the <br /> view from inside.
               </h1>
             </Reveal>
           </div>
           <div className="flex justify-between items-end pb-6 md:pb-0">
             <Reveal>
-              <div className="flex flex-col space-y-2 pb-16">
+              <div className="flex flex-col space-y-2 pb-4 md:pb-16">
                 <span className="-rotate-90 pb-10 pl-[0.8rem] font-thin text-neutral-300"><em>explore</em></span>
                 <Link href="/#heropost">
                   <HiOutlineArrowLongDown 
