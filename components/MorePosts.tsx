@@ -6,7 +6,7 @@ import { AiOutlineSwapRight } from 'react-icons/ai'
 
 export default function MoreStories({ posts }: { posts: Post[] }) {
   return (
-    <section>
+    <section id="more">
       <div className="flex items-center mb-8 font-semibold tracking-widest text-2xl md:text-3xl space-x-2">
         <h2 className="px-4">
           More Posts
