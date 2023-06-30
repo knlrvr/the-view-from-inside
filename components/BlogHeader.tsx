@@ -20,7 +20,7 @@ export default function BlogHeader({ title, level }: { title: string, descriptio
               </Reveal>
             </div>
 
-            <div className="flex justify-between h-full items-end pb-24">
+            <div className="flex justify-between h-full items-end pb-36">
               <div className="">
                 <Link href="/#heropost" className="">
                   <HiOutlineArrowLongDown 
