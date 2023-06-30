@@ -11,7 +11,7 @@ import {
 const Footer = () => {
   return (
     <>
-      <div id="footer" className="py-4 px-4 md:border-t border-[#222] ">
+      <div id="contact" className="py-4 px-4 md:border-t border-[#222] ">
         <div className="text-2xl flex justify-between items-end font-bold leading-tight tracking-tight">
           <div className="flex flex-col">
             <p>the</p>
@@ -59,7 +59,7 @@ const Footer = () => {
           <Link href="/#more">
             More <span className="hidden md:inline-flex">Posts</span>
           </Link>
-          <Link href="">
+          <Link href="/#contact">
             Contact
           </Link>
         </div>

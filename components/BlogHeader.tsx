@@ -54,7 +54,7 @@ export default function BlogHeader({ title, level }: { title: string, descriptio
                 </Link>
                 <div className="border-r border-[#222]"
                 ></div>
-                <Link href="/#footer" className="w-full py-4 text-center hover:text-emerald-600">
+                <Link href="/#contact" className="w-full py-4 text-center hover:text-emerald-600">
                   Contact
                 </Link>
               </div>
