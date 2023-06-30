@@ -1,6 +1,8 @@
 import React from 'react'
 import Image from 'next/image'
 
+import { Reveal } from './utils/reveal'
+
 export default function About() {
   return (
     <>
