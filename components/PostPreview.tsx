@@ -13,7 +13,7 @@ export default function PostPreview({
   slug,
 }: Omit<Post, '_id'>) {
   return (
-    <div className="h-fit border-b-2 border-[#222] relative">
+    <div className="h-fit border-b-2 border-[#222] md:border-none relative">
       <div className="mb-2 relative">
         <CoverImage
           slug={slug}

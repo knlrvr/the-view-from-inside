@@ -11,7 +11,7 @@ export default function BlogHeader({ title, level }: { title: string, descriptio
     case 1:
       return (
         <header className="px-4">
-          <div className="h-screen flex flex-col">
+          <div className="h-screen flex flex-col max-w-7xl mx-auto">
             <div className="flex justify-between">
               <Reveal>
                 <h1 className="w-3/4 pt-8 text-8xl md:text-9xl lg:text-[9rem] xl:text-[10rem] font-bold leading-tight tracking-tight">
@@ -33,7 +33,6 @@ export default function BlogHeader({ title, level }: { title: string, descriptio
                       width: 65,
                       height: 65,
                       borderRadius: 100,
-                      backgroundColor: "white"
                   }}
                   animate={{ rotate: 360 }}
                   transition={{ ease: "linear", duration: 2, repeat: Infinity }}

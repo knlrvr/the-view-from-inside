@@ -1,5 +1,5 @@
 export default function BlogContainer({ children }) {
   return (
-    <div className="container mx-auto">{children}</div>
+    <div className="max-w-7xl mx-auto">{children}</div>
   )
 }
