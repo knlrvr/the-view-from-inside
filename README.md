@@ -31,7 +31,7 @@ TVFI was built for a client that no longer wished to use a drag-and-drop website
 
 [![TailwindCSS](https://img.shields.io/badge/tailwindcss-%2338B2AC.svg?style=for-the-badge&logo=tailwind-css&logoColor=white)](https://tailwindcss.com/docs/installation)
 
-[![Sanity](https://img.shields.io/badge/sanity-red.svg?style=for-the-badge&logoColor=white)](https://tailwindcss.com/docs/installation)
+[![Sanity](https://img.shields.io/badge/sanity-critical.svg?style=for-the-badge&logoColor=white)](https://tailwindcss.com/docs/installation)
 
 
 <a name="notes"></a>
