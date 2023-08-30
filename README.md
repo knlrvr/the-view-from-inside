@@ -23,11 +23,6 @@ TVFI was built for a client that no longer wished to use a drag-and-drop website
 
 <a name="built-with"></a>
 ## Built With
-- [React](https://react.dev/)
-- [TypeScript](https://www.typescriptlang.org/)
-- [Next](https://nextjs.org/)
-- [Tailwind](https://tailwindcss.com/docs/installation)
-- [Sanity](https://www.sanity.io/)
 [![TypeScript](https://img.shields.io/badge/typescript-%23007ACC.svg?style=for-the-badge&logo=typescript&logoColor=white)](https://www.typescriptlang.org/)
 
 [![React](https://img.shields.io/badge/react-%2320232a.svg?style=for-the-badge&logo=react&logoColor=%2361DAFB)](https://react.dev/)
@@ -36,7 +31,7 @@ TVFI was built for a client that no longer wished to use a drag-and-drop website
 
 [![TailwindCSS](https://img.shields.io/badge/tailwindcss-%2338B2AC.svg?style=for-the-badge&logo=tailwind-css&logoColor=white)](https://tailwindcss.com/docs/installation)
 
-[![SanityIO](https://img.shields.io/badge/Sanity?style=for-the-badge&logoColor=red)](https://www.sanity.io/)
+[![SanityIO](https://img.shields.io/badge/Sanity?logoColor=red)](https://www.sanity.io/)
 
 
 <a name="notes"></a>
