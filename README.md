@@ -2,12 +2,12 @@
 
 ![tvfi-landing](https://github.com/knlrvr/the-view-from-inside/assets/91632194/c43d35ff-2e46-4cfc-a9be-d8f87c8a6c98)
 
+## Table of Contents
 - [Description](#description)
 - [Purpose](#purpose)
 - [View](#view)
 - [Built With](#built-with)
 - [Notes](#notes)
-
 
 <a name="description"></a>
 ## Description
