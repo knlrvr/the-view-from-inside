@@ -11,7 +11,7 @@
 
 <a name="description"></a>
 ## Description
-The View From Inside (TVFI) is a statically generated blog with dynamic routes to support each blog post. It supports easy  content editing via Sanity Studio with side-by-side content previews, so the author knows exactly what they're publishing. 
+The View From Inside is an exceptionally performant blog powered by Sanity's dynamic capabilities. It seamlessly handles content creation with native editing, while its dynamic routing supports individual post pages for effortless article exploration. With optimized loading times and responsiveness through static generation, The View From Inside delivers compelling content in a user-friendly and efficient manner.
 
 <a name="purpose"></a>
 ## Purpose
