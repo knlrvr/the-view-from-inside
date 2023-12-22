@@ -6,7 +6,7 @@ import { Reveal } from './utils/reveal'
 export default function About() {
   return (
     <>
-      <div id="about" className="mb-20 grid grid-cols-1 md:grid-cols-2 gap-x-8 py-12 border-t border-b border-[#222] px-4">
+      <div id="about" className="mb-20 grid grid-cols-1 md:grid-cols-2 gap-x-8 py-12 border-t border-b border-[#222] mx-4">
         <div className="flex justify-center items-center">
           <div className="w-48 h-48 bg-gray-200 mb-10 md:mb-0 rounded-full"></div>
         </div>

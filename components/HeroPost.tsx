@@ -16,7 +16,7 @@ export default function HeroPost(
   return (
     <section id="heropost" className="py-2 mb-8 mt-6 relative px-4 bg-transparent backdrop-filter backdrop-blur-xl">
       <div className="h-8"></div>
-      <div className="absolute top-6 left-4 border border-[#222] bg-white px-[1.4rem] md:px-8 p-2 font-light tracking-widest text-lg md:text-2xl">
+      <div className="absolute top-8 md:top-6 left-4 border border-[#222] bg-white bg-opacity-90 px-[1.4rem] md:px-8 p-2 font-light tracking-widest text-sm md:text-xl">
         Featured Post
       </div>
       <div className="mb-4 md:mb-8 mt-2">
