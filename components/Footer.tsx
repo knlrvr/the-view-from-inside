@@ -7,10 +7,12 @@ import {
   BsFacebook,
   BsInstagram
 } from 'react-icons/bs'
+import { Reveal } from './utils/reveal'
 
 const Footer = () => {
   return (
     <>
+    <Reveal>
       <div id="contact" className="py-4 border-t border-[#222] mx-4 pt-10">
         <div className="text-2xl flex justify-between items-end font-bold leading-tight tracking-tight">
           <div className="flex flex-col">
@@ -42,22 +44,9 @@ const Footer = () => {
             <span className="text-xs group-hover:text-teal-700 duration-200">sarahtoney8877@gmail.com</span>
           </Link>
         </div>
-        <div className="flex justify-between md:justify-start md:space-x-8 text-xs">
-          <Link href="/">
-            Home
-          </Link>
-          <Link href="/#about">
-            About
-          </Link>
-          <Link href="/#more">
-            More <span className="hidden md:inline-flex">Posts</span>
-          </Link>
-          <Link href="/#contact">
-            Contact
-          </Link>
-        </div>
         <p className="pt-10 text-center text-xs"> &copy; 2023 Sarah Toney. All Rights Reserved.</p>
       </div>
+      </Reveal>
     </>
   )
 }

@@ -11,6 +11,7 @@ export default function BlogHeader({ title, level }: { title: string, descriptio
     case 1:
       return (
         <header className="px-4">
+          <Reveal>
           <div className="flex flex-col max-w-7xl mx-auto">
             <div className="flex justify-between items-end">
               <Reveal>
@@ -57,18 +58,21 @@ export default function BlogHeader({ title, level }: { title: string, descriptio
               </div>
             </div>
           </div>
+          </Reveal>
         </header>
       )
 
     case 2:
       return (
         <header>
-          <h2 className="mb-20 mx-2 mt-8 text-2xl font-bold leading-tight tracking-tight md:text-4xl md:tracking-tighter">
-            <Link href="/#heropost" className="hover:underline flex items-center space-x-2">
-              <AiOutlineSwapLeft />
-              <p>{title}</p>
-            </Link>
-          </h2>
+          <Reveal>
+            <h2 className="mb-20 mx-2 mt-8 text-2xl font-bold leading-tight tracking-tight md:text-4xl md:tracking-tighter">
+              <Link href="/#heropost" className="hover:underline flex items-center space-x-2">
+                <AiOutlineSwapLeft />
+                <p>{title}</p>
+              </Link>
+            </h2>
+          </Reveal>
         </header>
       )
 

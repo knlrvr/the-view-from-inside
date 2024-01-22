@@ -11,6 +11,7 @@ import * as demo from 'lib/demo.data'
 import type { Post, Settings } from 'lib/sanity.queries'
 import { notFound } from 'next/navigation'
 import Footer from './Footer'
+import { Reveal } from './utils/reveal'
 
 export interface PostPageProps {
   preview?: boolean
@@ -37,27 +38,29 @@ export default function PostPage(props: PostPageProps) {
       <PostPageHead settings={settings} post={post} />
 
       <Layout preview={preview} loading={loading}>
-        <Container>
-          <BlogHeader title={title} level={2} />
-          {preview && !post ? (
-            <PostTitle>Loading…</PostTitle>
-          ) : (
-            <>
-              <article>
-                <PostHeader
-                  title={post.title}
-                  coverImage={post.coverImage}
-                  date={post.date}
-                  author={post.author}
-                />
-                <PostBody content={post.content} />
-              </article>
-              <SectionSeparator />
-              {morePosts?.length > 0 && <MoreStories posts={morePosts} />}
-            </>
-          )}
-          <Footer />
-        </Container>
+        <Reveal>
+          <Container>
+            <BlogHeader title={title} level={2} />
+            {preview && !post ? (
+              <PostTitle>Loading…</PostTitle>
+            ) : (
+              <>
+                <article>
+                  <PostHeader
+                    title={post.title}
+                    coverImage={post.coverImage}
+                    date={post.date}
+                    author={post.author}
+                  />
+                  <PostBody content={post.content} />
+                </article>
+                <SectionSeparator />
+                {morePosts?.length > 0 && <MoreStories posts={morePosts} />}
+              </>
+            )}
+            <Footer />
+          </Container>
+        </Reveal>
       </Layout>
     </>
   )
