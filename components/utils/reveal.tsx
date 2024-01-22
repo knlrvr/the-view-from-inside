@@ -3,7 +3,6 @@ import {
     motion, 
     useInView,
     useAnimation,
-    useIsPresent 
 } from 'framer-motion'
 
 interface Props {

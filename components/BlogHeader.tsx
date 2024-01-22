@@ -10,17 +10,19 @@ export default function BlogHeader({ title, level }: { title: string, descriptio
   switch (level) {
     case 1:
       return (
-        <header className="px-4">
+        <header className="px-4 pt-10">
           <Reveal>
           <div className="flex flex-col max-w-7xl mx-auto">
+
             <div className="flex justify-between items-end">
               <Reveal>
-                <h1 className="w-3/4 pt-8 text-7xl md:text-9xl lg:text-[9rem] xl:text-[10rem] font-bold leading-tight tracking-tight">
-                  the <br /> view from inside.
+                <h1 className="text-7xl md:text-8xl lg:text-[9rem] xl:text-[10rem] font-bold leading-tight tracking-tight">
+                  the <br /> view from <br /> inside.
                 </h1>
               </Reveal>
+
               <Reveal>
-                <div className="w-16 h-16 mr-6 md:mr-8 lg:mr-4 pt-3 md:pt-5">
+                <div className="w-16 h-fit pb-4 lg:pb-6">
                   <svg xmlns="http://www.w3.org/2000/svg" version="1.0" preserveAspectRatio="xMidYMid meet" viewBox="107 209 271 145.4" className="fill-teal-800">
                     <g transform="translate(0.000000,500.000000) scale(0.100000,-0.100000)">
                     <path d="M2690 2888 c6 -13 52 -117 103 -233 l93 -210 60 -3 c41 -2 64 1 71 10 8 10 174 380 200 446 4 9 -13 12 -64 12 l-69 0 -15 -42 -16 -43 -100 -3 -100 -3 -17 46 -18 45 -69 0 c-67 0 -68 0 -59 -22z m315 -178 c-3 -11 -17 -46 -30 -77 -22 -55 -24 -57 -33 -33 -5 14 -17 42 -26 64 -26 62 -23 66 40 66 51 0 55 -2 49 -20z"/>
@@ -37,6 +39,7 @@ export default function BlogHeader({ title, level }: { title: string, descriptio
                   </svg>
                 </div>
               </Reveal>
+
             </div>
             <div className="mt-10">
               <div className="flex justify-between border-t border-b border-[#222] font-light text-xs md:text-sm">
@@ -67,7 +70,7 @@ export default function BlogHeader({ title, level }: { title: string, descriptio
         <header>
           <Reveal>
             <h2 className="mb-20 mx-2 mt-8 text-2xl font-bold leading-tight tracking-tight md:text-4xl md:tracking-tighter">
-              <Link href="/#heropost" className="hover:underline flex items-center space-x-2">
+              <Link href="/" className="hover:underline flex items-center space-x-2">
                 <AiOutlineSwapLeft />
                 <p>{title}</p>
               </Link>
