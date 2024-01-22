@@ -39,24 +39,21 @@ export default function BlogHeader({ title, level }: { title: string, descriptio
             </div>
             <div className="mt-10">
               <div className="flex justify-between border-t border-b border-[#222] font-light text-xs md:text-sm">
-                <Link href="/" className="w-full py-4 text-center hover:text-emerald-600">
+                <Link href="/" className="w-full py-4 text-center hover:text-teal-700 duration-200">
                   Home
                 </Link>
                 <div className="border-r border-[#222]"
                 ></div>
-                <Link href="/#about" className="w-full py-4 text-center hover:text-emerald-600">
+                <Link href="/#about" className="w-full py-4 text-center hover:text-teal-700 duration-200">
                   About
                 </Link>
                 <div className="border-r border-[#222]"
                 ></div>
-                <Link href="/#more" className="w-full py-4 text-center hover:text-emerald-600">
+                <Link href="/#more" className="w-full py-4 text-center hover:text-teal-700 duration-200">
                   More <span className="hidden md:inline-flex">Posts</span>
                 </Link>
-                <div className="border-r border-[#222]"
+                <div className=""
                 ></div>
-                <Link href="/#contact" className="w-full py-4 text-center hover:text-emerald-600">
-                  Contact
-                </Link>
               </div>
             </div>
           </div>

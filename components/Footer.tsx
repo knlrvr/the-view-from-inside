@@ -11,7 +11,7 @@ import {
 const Footer = () => {
   return (
     <>
-      <div id="contact" className="py-4 px-4 md:border-t border-[#222] ">
+      <div id="contact" className="py-4 border-t border-[#222] mx-4 pt-10">
         <div className="text-2xl flex justify-between items-end font-bold leading-tight tracking-tight">
           <div className="flex flex-col">
             <p>the</p>
@@ -35,18 +35,11 @@ const Footer = () => {
             </svg>
           </div>
         </div>
-        <div className="py-10 flex items-center space-x-4 text-md md:text-lg lg:text-xl">
-          <Link href="mailto:">
+        <div className="py-10 flex">
+          <Link className="flex items-center space-x-2 group"
+            href="mailto:sarahtoney8877@gmail.com">
             <BsEnvelope />
-          </Link>
-          <Link href="">
-            <BsTwitter />
-          </Link>
-          <Link href="">
-            <BsInstagram />
-          </Link>
-          <Link href="">
-            <BsFacebook />
+            <span className="text-xs group-hover:text-teal-700 duration-200">sarahtoney8877@gmail.com</span>
           </Link>
         </div>
         <div className="flex justify-between md:justify-start md:space-x-8 text-xs">
