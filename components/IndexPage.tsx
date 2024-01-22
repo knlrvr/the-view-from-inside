@@ -14,7 +14,7 @@ export interface IndexPageProps {
   loading?: boolean
   posts: Post[]
   settings: Settings
-}
+} 
 
 export default function IndexPage(props: IndexPageProps) {
   const { preview, loading, posts, settings } = props
